@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class MSELoss():
+class MSELoss:
     def __init__(self):
         self.x = 0
         self.gt = 0
@@ -20,7 +20,7 @@ class MSELoss():
         return out
 
 
-class Softmax():
+class Softmax:
     def __init__(self):
         self.x = 0
         self.stability_factor = 0.2
@@ -52,15 +52,15 @@ def test_softmax():
     x = np.ones((N, 1))
     softmax = Softmax()
     y = softmax(x)
-    print 'x ', x
-    print 'y ', y
-    print np.sum(y)
+    print("x ", x)
+    print("y ", y)
+    print(np.sum(y))
     x = np.array([[0.2, 1.0, 0.2, 0.2, 0.2, 0.2]])
-    print x
+    print(x)
     y = softmax(x)
-    print y
-    print np.sum(y)
+    print(y)
+    print(np.sum(y))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_softmax()

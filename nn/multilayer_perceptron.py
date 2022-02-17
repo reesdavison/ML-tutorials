@@ -1,7 +1,7 @@
 import numpy as np
 
-import standard_layers as std
-import activation_functions as act
+import nn.standard_layers as std
+import nn.activation_functions as act
 
 
 class Perceptron():

@@ -46,9 +46,9 @@ def test_relu():
     relu = Relu()
     y = relu(x)
     J_x = relu.backward(y)
-    print x, 'x'
-    print y, 'y'
-    print J_x, 'J_x'
+    print(x, 'x')
+    print(y, 'y')
+    print(J_x, 'J_x')
 
 
 if __name__ == '__main__':
